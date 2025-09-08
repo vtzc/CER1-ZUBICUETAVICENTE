@@ -11,17 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-main.container {
-  background-color: #f2e8cf;
-  box-shadow: 0 4px 8px rgba(0.1, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 body {
   background-color: #f2e8cf;
   padding-top: 200px;
@@ -34,27 +23,25 @@ header {
   width: 100%;
   z-index: 1000;
   background-color: #f2e8cf;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header-branding {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
 }
 
 .brand-text h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0;
 }
 
-.brand-text p {
-  font-size: 1.2rem;
-  margin-top: 0;
-}
+.brand-text p {font-size: 0.9rem;}
 
 .logo {
-  height: 80px;
+  height: 50px;
   padding-bottom: 1%;
   padding-right: 1%;
 }
@@ -64,17 +51,11 @@ nav {
   color: #f2e8cf;
 }
 
-#item {
-  color: white;
-}
+#item {color: #ffffff;}
 
-.navbar {
-  padding: 1rem 0;
-}
+.navbar {padding: 0.5rem 1rem;}
 
-.navbar a:hover {
-  text-decoration: underline;
-}
+.navbar a:hover {text-decoration: underline;}
 
 .navbar-toggler-icon {
   background-color: #f2e8cf;
@@ -83,18 +64,32 @@ nav {
   border: 1px solid black;
 }
 
+body {
+  background-color: #f2e8cf;
+  padding-top: 120px;
+}
+
+main .container {
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero {
   display: block;
   border-radius: 10px;
   background-color: #e7d4a5;
   text-align: center;
-  padding: 2vw 2vw 2vw 2vw;
+  padding-top: 1vw;
+  padding-bottom: 0.5vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
 .hero-image {
-  width: 50%;
+  width: 30%;
   aspect-ratio: 4 / 3;
   object-fit: contain;
   border-radius: 8px;
@@ -104,19 +99,32 @@ nav {
   margin-bottom: 20px;
 }
 
-#cuenta1,
-#cuenta2,
-#cuenta3 {
+#cuenta1,#cuenta2,#cuenta3 {
   font-weight: bold;
   color: #ca6702;
 }
+
+.card {
+  background-color: #f2e8cf;
+  border: none;
+}
+
+.card-body {background-color: #f2e8cf;}
 
 .card-img-top {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: contain;
-  background-color: #ffffff;
+  background-color: #f2e8cf;
   padding-top: 10px;
+}
+
+#formulario_comentarios {
+  background-color: #f2e8cf;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 1.5rem;
 }
 
 @media (max-width: 425px) {
@@ -133,6 +141,9 @@ nav {
     width: 120%;
     max-width: 265px;
     align-self: auto;
+  }
+  main {
+    padding-bottom: 300px;
   }
 }
 
